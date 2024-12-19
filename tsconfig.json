@@ -3,7 +3,7 @@
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "Node16",
+    "module": "ESNext",
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
@@ -11,7 +11,7 @@
     },
 
     /* Bundler mode */
-    "moduleResolution": "Node16",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
