@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "rollup/parseAst": path.resolve(__dirname, "node_modules/rollup/dist/parseAst.js")
     },
   },
 })
