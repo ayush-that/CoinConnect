@@ -1,34 +1,72 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
+# CoinConnect
 
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
+A modern web3 wallet connection interface built with React, TypeScript, and Vite.
 
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
+## Features
 
-# Sample <LANGUAGE/FRAMEWORK>
+- 🔗 Web3 wallet integration
+- 🌙 Dark/Light mode support
+- 🎨 Modern UI with shadcn/ui components
+- ⚡ Built with Vite for fast development
+- 🔒 Type-safe with TypeScript
+- 💅 Styled with Tailwind CSS
 
-Sample description
+## Tech Stack
 
----
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- ethers.js
+- Coinbase Wallet SDK
 
-## 🚀 Getting Started  
+## Getting Started
 
-### Open Using Daytona  
+### Prerequisites
 
-1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
-2. **Create the Workspace**:  
-   ```bash  
-   daytona create <SAMPLE_REPO_URL> 
-   ```  
+- Node.js 20 or later
+- npm or your preferred package manager
 
-... MORE STEPS IF NEEDED ...
+### Installation
 
-4. **Start the Application**:  
-   ```bash  
-   command to start the app
-   ```  
+1. Clone the repository:
 
----
+```bash
+git clone https://github.com/your-username/coinconnect.git
+cd coinconnect
+```
 
-## ✨ Features  
+2. Install dependencies (If you are using Devcontainer, you can skip this step) and Run the development server. The app will be available at http://localhost:5173:
 
-List of sample features (e.g. realtime chat app, standardized development environment with devcontainers)
+```bash
+npm install
+npm run dev
+```
+
+### Building for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── NetworkSelector.tsx
+│   ├── WalletConnectButton.tsx
+│   └── ...
+├── lib/
+│   ├── hooks/
+│   │   ├── useCoinbaseWallet.ts
+│   │   └── ...
+│   └── utils/
+│       └── ...
+```
+
+## License
+
+MIT License - see LICENSE file for details
